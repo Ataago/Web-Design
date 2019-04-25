@@ -1,0 +1,66 @@
+
+
+
+.menu
+{
+	width: 100%;
+	background-color: grey;
+	padding: 70px 50px;
+	font-size: 2em;
+	margin: 0;
+}
+
+.menu li
+{
+	list-style-type: none;
+	float: left;
+	padding: 9px;
+}
+
+.cart_container
+{
+	background-color: black;
+	color: white;
+	position: absolute;
+	right: 5%;
+	border-radius: 10px;
+}
+
+
+
+
+
+
+.container
+{
+	position: relative;
+	top: 100px;
+	left: 0px
+}
+
+.item_img
+{
+	width:200px;
+}
+
+.item
+{
+	padding:10px;
+	text-align:center;
+}
+
+table
+{
+	width: 80%;
+}
+
+.item_quantity
+{
+	width:60;
+	text-align: center;
+}
+
+.item_button
+{
+	width:1px;
+}

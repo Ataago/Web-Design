@@ -1,0 +1,94 @@
+
+.head {
+	text-align:center;
+	color:white;
+	margin:40px;
+}
+
+h1.head {
+	font:bold 60px Georgia;
+	color:orange;
+}
+
+h4.head {
+	color:green;
+}
+
+span {
+	color:blue;
+}
+
+.button {
+	color:red;
+	text-decoration:none;
+	background:blue;
+	padding:18px;
+	border:5px solid red;
+	border-radius:20px;
+	transition:0.5s;
+	font-size:18px;
+}
+
+.button:hover {
+	color:green;
+	font-size:2em;	
+	background:red;
+	border:5px solid green;
+	border-radius:20px;
+}
+
+.overlay {
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background:inline;
+	margin:10px;
+	padding:10px;
+	transition:0.1s;
+	visibility:hidden;
+	opacity:0;
+}
+
+.overlay:target {
+	visibility:visible;
+	opacity:1;
+}
+
+
+.popup {
+	margin:10px;
+	padding:10px;
+	background:skyblue;
+	border-radius:15px;
+	width:38%;
+	position:relative;
+	transition:all 10s ease-in-out;
+}
+
+.popup h2 {
+	margin-top:0;
+	color:red;
+	text-align:center;
+}
+
+.popup .close {
+	position:absolute;
+	top:15px;
+	right:30px;
+	transition:all 200ms;
+	font-size:30px;
+	font-weight:bold;
+	text-decoration:none;
+	color:black;
+}
+
+.popup .close:hover {
+	color:red;
+}
+
+.popup .content {
+	max-height:30%;
+	overflow:auto;
+}

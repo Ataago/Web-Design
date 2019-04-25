@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="stud.xsl"?>
+<vtu>
+<student>
+<name>Ataa</name>
+<usn>1DS16CS721</usn>
+<branch>CSE</branch>
+<college>DSCE</college>
+</student>
+<br />
+<student>
+<name>Nabil</name>
+<usn>1DS16CS722</usn>
+<branch>CSE</branch>
+<college>DSCE</college>
+</student>
+<br />
+<student>
+<name>Mayur</name>
+<usn>1DS16CS720</usn>
+<branch>CSE</branch>
+<college>DSCE</college>
+</student>
+</vtu>

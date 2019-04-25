@@ -1,0 +1,47 @@
+
+<html>
+	<head>
+		<title>Lab Pro 3B</title>
+	</head>
+
+	<body>
+		
+		<script type = "text/javascript">
+
+			function validate(usn, sem)
+			{
+				var usnExp = /^[1-4][a-zA-Z][a-zA-Z][0-9][0-9][a-zA-Z][a-zA-Z][0-9][0-9][0-9]$/;
+				var semExp = /^[1-8]$/;
+                
+				alert("hello bro");
+				if (!usn.value.match(usnExp) && !sem.value.match(semExp))
+				{
+					alert("Both sem and USN is Invalid ;(");
+					return false;
+				}
+				if (!usn.value.match(usnExp))
+				{
+					alert("USN is invalid");
+					return false;
+				}
+				if (!sem.value.match(semExp))
+				{
+					alert("SEM is invalid");
+					return false;
+				}
+				else
+				{
+					alert("VALID!!!");
+					return true;
+				}
+			}
+		</script>
+
+		<form>
+			Enter USN: <input type = "text" id = "usn" /> <br />
+			Enter SEM: <input type = "text" id = "sem" /> <br />
+			
+			<input type = "submit" onclick = "validate(document.getElementById('usn'), document.getElementById('sem'))" value = "Validate" />
+		</form>
+	</body>
+</html>

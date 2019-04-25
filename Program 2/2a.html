@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <script type = "text/javascript">
+            function calculation()
+            {
+                var x = prompt("Enter the Value of x: ");
+                x = parseInt(x);
+                var y1 = 0, y2 = 1, i , res;
+                if (x < 0 || x == 0)
+                {
+                    document.write("Not Valid Input");
+                }
+                
+                if (x == 1)
+                {
+                    document.write("0");
+                }
+                
+                if (x > 1)
+                {
+                    document.write(y1, "&nbsp; &nbsp;", y2);
+                    for (i = 2; i < x; i++)
+                    {
+                        res = y1 + y2;
+                        y1 = y2;
+                        y2 = res;
+                        document.write("&nbsp; &nbsp;", res);
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body onload = "calculation()">
+    </body>
+</html>

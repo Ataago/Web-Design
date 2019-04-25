@@ -1,0 +1,74 @@
+<!-- Shopping Cart -->
+
+	<html>
+	
+	<head>
+		<title>Shopping Site</title>
+		
+		<script type="text/javascript" src="shopping_cart.js"> </script>
+		<link rel = "stylesheet" type = "text/css" href = "go_cartcss.css" />
+	</head>
+	
+	<body>
+
+	<!-- Menu bar -->
+    <ul class="menu">
+    	<li>Go Shopping</li>
+    	<a href="cart.html">
+	    	<div class="cart_container">
+	    		<li id="cart_label">Cart</li>
+	    		<li id="cart_quantity">0</li>
+	    	</div>
+    	</a>
+    </ul>
+	
+
+
+	<!-- Games table -->
+	<div class = "container">
+		<table align = "center">
+			
+			<tr>
+				<td class = "item">
+					<img class = "item_img" src = "imgs/gta5.jpg">
+					<pre><b>Grand Theft Auto 5</b></pre>
+					<p id = "price_gta5">Rs: 3000</p>
+					<input class = "item_button" type = "submit" value = "+" onclick = "addItem('gta5', 'Grand Theft Auto 5', '3000')" />
+					<input class = "item_quantity" id = "gta5" type = "text" value = "0" />
+					<input class = "item_button" type = "submit" value = "-" onclick = "subItem('gta5')" />
+				</td>
+				
+				<td class = "item">
+					<img class = "item_img" src = "imgs/gta4.jpg">
+					<pre><b>Grand Theft Auto 4</b></pre>
+					<p id = "price_gta4">Rs: 2500</p>
+					<input class = "item_button" type = "submit" value = "+" onclick = "addItem('gta4')" />
+					<input class = "item_quantity" id = "gta4" type = "text" value = "0" />
+					<input class = "item_button" type = "submit" value = "-" onclick = "subItem('gta4')" />
+				</td>
+			</tr>
+			
+			<tr>
+				<td class = "item">
+					<img class = "item_img" src = "imgs/rl.jpg">
+					<pre><b>Rocket League</b></pre>
+					<p id = "price_rl">Rs: 700</p>
+					<input class = "item_button" type = "submit" value = "+" onclick = "addItem('rl')" />
+					<input class = "item_quantity" id = "rl" type = "text" value = "0" />
+					<input class = "item_button" type = "submit" value = "-" onclick = "subItem('rl')" />
+				</td>
+				
+				<td class = "item">
+					<img class = "item_img" src = "imgs/ets2.jpg">
+					<pre><b>Euro Truck Simulator</b></pre>
+					<p id = "price_ets2">Rs: 1300</p>
+					<input class = "item_button" type = "submit" value = "+" onclick = "addItem('ets2')" />
+					<input class = "item_quantity" id = "ets2" type = "text" value = "0" />
+					<input class = "item_button" type = "submit" value = "-" onclick = "subItem('ets2')" />
+				</td>
+			</tr>
+			
+		</table>
+	</div>
+	</body>
+	</html>

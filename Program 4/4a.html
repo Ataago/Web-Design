@@ -1,0 +1,67 @@
+<!-- program to demo z-index -->
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Program 4a</title>
+
+		<script type = "text/javascript">
+	
+			var ontop = "stack1";
+
+			function move(curr)
+			{
+				document.getElementById(ontop).style.zIndex = document.getElementById(curr).style.zIndex;
+				document.getElementById(curr).style.zIndex = "5";
+				
+				ontop = curr;
+			}
+		</script>
+
+		<style type = "text/css">
+			p 
+			{
+				padding: 1in;
+				position: absolute;
+				width: 150px;
+			}
+
+			p.one 
+			{
+				left: 100px;
+				top: 50px;
+				background-color: #999999;
+				z-index: 1;
+			}
+	
+			p.two 
+			{
+				left: 110px;
+				top: 60px;
+				background-color: #777777;
+				z-index: 0;
+			}
+
+			p.three 
+			{
+				left: 120px;
+				top: 70px;
+				background-color: #444444;
+				z-index: -1;
+			}
+		
+			p:hover 
+			{
+				background-color: #DDDDDD;
+			}
+		</style>
+
+	</head>
+
+	<body bgcolor = #FFFFFF>
+		<p class = "one" id = "stack1" onmouseover = "move('stack1')">Amit</p>
+		<p class = "two" id = "stack2" onmouseover = "move('stack2')">is</p>
+		<p class = "three" id = "stack3" onmouseover = "move('stack3')">Smart</p>
+	</body>
+</html>
