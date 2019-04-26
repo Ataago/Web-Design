@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet href="p5a.css" type="text/css"?>
+<vtu>
+	<student>
+		<name>Ataa</name>
+		<usn>1DS16CS721</usn>
+		<collegeName>DSCE</collegeName>
+		<branch>CSE</branch>
+		<year>2020</year>
+		<email>ataago@dsce.org</email>
+	</student>
+	<student>
+		<name>Kiran</name>
+		<usn>1DS16CS715</usn>
+		<collegeName>DSCE</collegeName>
+		<branch>CSE</branch>
+		<year>2016</year>
+		<email>kiran@dsce.org</email>
+	</student>
+	<student>
+		<name>Mayur</name>
+		<usn>1DS16CS720</usn>
+		<collegeName>DSCE</collegeName>
+		<branch>CSE</branch>
+		<year>2016</year>
+		<email>mayur@dsce.org</email>
+	</student>
+</vtu>

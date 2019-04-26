@@ -1,5 +1,5 @@
 <?php
-mysqli_connect("localhost","root","fedora") or die(mysql_error());
+mysql_connect("localhost","root","fedora") or die(mysql_error());
 mysql_select_db("student") or die(mysql_error());
 $name=$_GET['name1'];
 $add1=$_GET['addr1'];

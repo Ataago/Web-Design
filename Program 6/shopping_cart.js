@@ -7,28 +7,23 @@ if (!visited) {
 
 
 function init() {
-    sessionStorage.setItem("count", 0);
-	sessionStorage.setItem("total_cost", 0);
-
-	sessionStorage.setItem("gta5_Quantity", 0);
-	sessionStorage.setItem("gta5_Price", 3000);
-
-	sessionStorage.setItem("gta4_Quantity", 0);
-	sessionStorage.setItem("gta4_Price", 2500);
-
-	sessionStorage.setItem("rl_Quantity", 0);
-	sessionStorage.setItem("rl_Price", 700);
-
-	sessionStorage.setItem("ets2_Quantity", 0);
-	sessionStorage.setItem("ets2_Price", 1300);
 }
 
+sessionStorage.setItem("count", 0);
+sessionStorage.setItem("total_cost", 0);
 
-function setCost() {
-    total = parseInt(sessionStorage.getItem("total_cost"));
-    document.getElementById("amount").innerText = total;
+sessionStorage.setItem("gta5_Quantity", 0);
+sessionStorage.setItem("gta5_Price", 3000);
 
-}
+sessionStorage.setItem("gta4_Quantity", 0);
+sessionStorage.setItem("gta4_Price", 2500);
+
+sessionStorage.setItem("rl_Quantity", 0);
+sessionStorage.setItem("rl_Price", 700);
+
+sessionStorage.setItem("ets2_Quantity", 0);
+sessionStorage.setItem("ets2_Price", 1300);
+
 
 function addItem(id)
 {

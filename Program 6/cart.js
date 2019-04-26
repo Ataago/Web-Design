@@ -16,7 +16,5 @@ while (itemNo < 4)
 	total_cost = total_cost + (price * quantity);
 	itemNo = itemNo + 1;
 }
-
-document.getElementById('total_cost').innerHTML = total_cost;	
-
-
+8789
+document.getElementById('total_cost').innerHTML = total_cost;
